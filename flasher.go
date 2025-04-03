@@ -38,8 +38,7 @@ import (
 
 var input string
 
-var executable, _ = os.Executable()
-var cwd = filepath.Dir(executable)
+var cwd, _ = os.Getwd()
 
 var adb *exec.Cmd
 var fastboot *exec.Cmd
